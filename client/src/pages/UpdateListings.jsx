@@ -143,7 +143,7 @@ export default function UpdateListing() {
       <h1 className="text-3xl font-semibold text-center my-7">
         Update a Events
       </h1>
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
+      <form onSubmit={handleSubmit} className="flex flex-col max-w-6xl sm:flex-row gap-4">
         <div className="flex flex-col gap-4 flex-1">
           <input
             type="text"

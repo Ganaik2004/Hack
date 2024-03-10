@@ -128,7 +128,7 @@ export default function CreateListing() {
       <h1 className="text-3xl font-semibold text-center my-7">
         Create a Events
       </h1>
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
+      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row max-w-6xl  gap-4">
         <div className="flex flex-col gap-4 flex-1">
           <input
             type="text"
