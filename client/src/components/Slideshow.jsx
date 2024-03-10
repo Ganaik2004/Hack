@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-
+// import '../components/style.css'
 const slideImages = [
   {
     url: 'https://images.unsplash.com/photo-1589487391730-58f20eb2c308?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -25,7 +25,8 @@ const slideImages = [
 
 const Slideshow = () => {
   return (
-    <div className="ml-2  absolute mt-24 w-full md:w-[90%] lg:w-[85%] xl:w-[1150px] border-2 rounded-2xl border-white bg-blue-500 bg-opacity-65 drop-shadow-lg">
+  <div className='max-w-6xl mx-auto'>
+    <div className="slider relative mt-2 w-full md:w-[90%] lg:w-screen xl:w-[1150px] border-2 rounded-2xl border-white bg-blue-500 bg-opacity-65 drop-shadow-lg ">
       <Fade autoplay={true} duration={1000} transitionDuration={400}>
         {slideImages.map((slideImage, index) => (
           <div key={index} className="h-96">  
@@ -39,8 +40,9 @@ const Slideshow = () => {
         ))}
       </Fade>
     </div>
+  </div>
+    
   );
 }
 
-export default Slideshow;
-
+export default Slideshow;

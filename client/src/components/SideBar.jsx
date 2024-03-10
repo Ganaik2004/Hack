@@ -9,7 +9,7 @@ export default function SideBar(){
     return (
         <>
             {/* Sidebar */}
-            <div className="flex flex-col  h-[130vh] items-center bg-slate-900  w-24 py-16 ">
+            <div className="flex flex-col  h-[130vh] items-center bg-slate-900  w-[68px] py-16 ">
             {/* <span className='text-white font-bold underline '>Connect</span> */}
                 <hr className="w-24" ></hr>
                 <Link to="/players" className="text-white hover:text-blue-300 py-8">

@@ -1,22 +1,15 @@
-import React from 'react'
-import Slideshow from '../components/Slideshow'
-// import Slideshow from './Slideshow';   
-export default function Home() {
-  return (
-    <div className="flex bg-slate-50 h-screen" style={{ backgroundImage: "url('https://plus.unsplash.com/premium_photo-1675662138450-407093b95818?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}>
-    {/* Courousel */}
-    <Slideshow />
-    {/* Content Section */}
-    <div className="container mx-auto mt-8 w-30">
-        <h1 className="text-6xl text-center font-arial font-extrabold flex flex-row italic text-yellow-400 drop-shadow-xl">
-            Find Peers. Find Events. Find Passion
-        </h1>
-    </div>
-</div>
-  )
+import React from 'react';
+import Slideshow from '../components/Slideshow';        
+import Gallery from '../components/Gallery';
+function Home() {
+    return (
+        <div className="overflow-y-auto bg-slate-50 h-[1097px] " style = {{backgroundImage: "url('https://t3.ftcdn.net/jpg/04/75/61/48/240_F_475614851_l1RRxP4QuZN57jBetpvP7mp8u2Qyz5JK.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundAttachment: "fixed"}}>
+            
+            <Slideshow />
+            {/* Content Section */}
+        <Gallery  />
+        </div>
+    );
 }
 
-
-
-
-       
+export default Home;
